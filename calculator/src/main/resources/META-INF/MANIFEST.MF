@@ -1,0 +1,6 @@
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.epam.trainings.Calculator
+Bundle-Version: 1.0.0
+Bundle-Name: Calculator
+Import-Package: org.osgi.framework, javax.swing
+Bundle-Activator: com.epam.training.calculator.Activator

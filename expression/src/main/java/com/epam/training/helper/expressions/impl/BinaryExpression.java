@@ -1,10 +1,9 @@
-package com.epam.training.expressions.impl;
+package com.epam.training.helper.expressions.impl;
 
-import com.epam.training.operations.Operation;
-import com.epam.training.expressions.Expression;
-import com.epam.training.expressions.ExpressionException;
-
-import static com.epam.training.ExpressionHelper.createExpression;
+import com.epam.training.helper.ExpressionHelper;
+import com.epam.training.helper.expressions.Expression;
+import com.epam.training.helper.expressions.ExpressionException;
+import com.epam.training.helper.operations.Operation;
 
 public class BinaryExpression implements Expression {
 
@@ -13,8 +12,8 @@ public class BinaryExpression implements Expression {
     private Operation operation;
 
     public BinaryExpression(String leftExpressionString, String rightExpressionString, Operation operation) throws ExpressionException {
-        this.leftExpression = createExpression(leftExpressionString);
-        this.rightExpression = createExpression(rightExpressionString);
+        this.leftExpression = ExpressionHelper.createExpression(leftExpressionString);
+        this.rightExpression = ExpressionHelper.createExpression(rightExpressionString);
         this.operation = operation;
     }
 

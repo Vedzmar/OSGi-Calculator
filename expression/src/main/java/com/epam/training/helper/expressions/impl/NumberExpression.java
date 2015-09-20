@@ -1,7 +1,7 @@
-package com.epam.training.expressions.impl;
+package com.epam.training.helper.expressions.impl;
 
-import com.epam.training.expressions.Expression;
-import com.epam.training.expressions.ExpressionException;
+import com.epam.training.helper.expressions.Expression;
+import com.epam.training.helper.expressions.ExpressionException;
 
 import static java.lang.String.format;
 

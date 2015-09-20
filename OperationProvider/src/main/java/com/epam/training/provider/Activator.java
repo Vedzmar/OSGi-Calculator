@@ -1,4 +1,4 @@
-package com.epam.training;
+package com.epam.training.provider;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

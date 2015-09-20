@@ -1,6 +1,6 @@
-package com.epam.training.operations.impl;
+package com.epam.training.helper.operations.impl;
 
-import com.epam.training.operations.Operation;
+import com.epam.training.helper.operations.Operation;
 
 /**
  * Created by Dzianis on 09.09.2015.

@@ -1,4 +1,4 @@
-package com.epam.training.expressions;
+package com.epam.training.helper.expressions;
 
 /**
  * Created by Dzianis on 09.09.2015.

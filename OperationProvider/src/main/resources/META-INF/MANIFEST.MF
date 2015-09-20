@@ -3,4 +3,4 @@ Bundle-SymbolicName: com.epam.trainings.OperationProvider
 Bundle-Version: 1.0.0
 Bundle-Name: Operation Provider
 Import-Package: org.osgi.framework
-Bundle-Activator: com.epam.training.Activator
+Bundle-Activator: com.epam.training.provider.Activator

@@ -1,8 +1,8 @@
-package com.dzianis.eductation;
+package com.epam.training.calculator;
 
 
-import com.epam.training.ExpressionHelper;
-import com.epam.training.expressions.ExpressionException;
+import com.epam.training.helper.ExpressionHelper;
+import com.epam.training.helper.expressions.ExpressionException;
 
 import javax.swing.*;
 import java.awt.*;

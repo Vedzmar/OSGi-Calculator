@@ -1,16 +1,15 @@
-package com.epam.training;
+package com.epam.training.helper;
 
 
-import com.epam.training.expressions.Expression;
-import com.epam.training.expressions.ExpressionException;
-import com.epam.training.expressions.impl.BinaryExpression;
-import com.epam.training.expressions.impl.NumberExpression;
-import com.epam.training.operations.Operation;
-import com.epam.training.operations.impl.MinusOperation;
-import com.epam.training.operations.impl.MultiplicationOperation;
-import com.epam.training.operations.impl.PlusOperation;
+import com.epam.training.helper.expressions.Expression;
+import com.epam.training.helper.expressions.ExpressionException;
+import com.epam.training.helper.expressions.impl.BinaryExpression;
+import com.epam.training.helper.expressions.impl.NumberExpression;
+import com.epam.training.helper.operations.impl.MinusOperation;
+import com.epam.training.helper.operations.impl.MultiplicationOperation;
+import com.epam.training.helper.operations.Operation;
+import com.epam.training.helper.operations.impl.PlusOperation;
 
-import java.io.IOException;
 import java.util.*;
 
 

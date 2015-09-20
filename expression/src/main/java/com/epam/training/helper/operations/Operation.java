@@ -1,4 +1,4 @@
-package com.epam.training.operations;
+package com.epam.training.helper.operations;
 
 /**
  * Created by Dzianis on 09.09.2015.
