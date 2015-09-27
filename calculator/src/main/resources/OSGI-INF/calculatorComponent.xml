@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="OSGi Calculator">
+        <implementation class="com.epam.training.calculator.CalculatorWindow"/>
+    </scr:component>
+    <reference
+        interface="com.epam.training.helper.operations.Operation"
+        cardinality="0..n"
+        policy="dynamic"
+        bind="bindOperation"
+        unbind="unbindOperation"/>
+</components>

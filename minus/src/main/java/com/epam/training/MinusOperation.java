@@ -2,7 +2,6 @@ package com.epam.training;
 
 import com.epam.training.helper.operations.Operation;
 
-
 public class MinusOperation implements Operation {
     public long operate(long left, long right) {
         return left - right;

@@ -2,6 +2,6 @@ Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.epam.training.PlusOperation
 Bundle-Version: 1.0.0
 Bundle-Name: PlusOperation
-operationClass: com.epam.training.PlusOperation
 Export-Package: com.epam.training
-Import-Package: com.epam.training.helper.operations
+Import-Package: com.epam.training.helper.operations, org.osgi.service.component
+Service-Component: OSGI-INF/component.xml
