@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.epam.training</groupId>
-  <artifactId>operationProvider</artifactId>
+  <artifactId>PlusOperation</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>operationProvider</name>
+  <name>PlusOperation</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -16,12 +16,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.osgi</groupId>
-      <artifactId>org.osgi.core</artifactId>
-      <version>4.3.0</version>
-      <scope>provided</scope>
+      <groupId>com.epam.training</groupId>
+      <artifactId>expression</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
+
+
 
   <build>
     <plugins>

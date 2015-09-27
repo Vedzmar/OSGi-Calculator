@@ -26,7 +26,7 @@ public class BinaryExpression implements Expression {
                 rightResult
         );
 
-        System.out.println("" + leftResult + operation + rightResult + " = " + result);
+//        System.out.println("" + leftResult + operation + rightResult + " = " + result);
 
         return result;
     }

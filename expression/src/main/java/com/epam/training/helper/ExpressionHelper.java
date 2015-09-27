@@ -5,16 +5,14 @@ import com.epam.training.helper.expressions.Expression;
 import com.epam.training.helper.expressions.ExpressionException;
 import com.epam.training.helper.expressions.impl.BinaryExpression;
 import com.epam.training.helper.expressions.impl.NumberExpression;
-import com.epam.training.helper.operations.impl.MinusOperation;
-import com.epam.training.helper.operations.impl.MultiplicationOperation;
 import com.epam.training.helper.operations.Operation;
-import com.epam.training.helper.operations.impl.PlusOperation;
 
 import java.util.*;
 
 
-public class ExpressionHelper {
+public class ExpressionHelper{
     private static Set<Operation> operationSet;
+    public static OperationHolder operationHolder;
 
     static {
         init();
@@ -28,9 +26,8 @@ public class ExpressionHelper {
                 return o1.getName().compareTo( o2.getName() );
             }
         });
-        operationSet.add(new PlusOperation());
-        operationSet.add(new MinusOperation());
-        operationSet.add(new MultiplicationOperation());
+
+        ExpressionHelper.operationHolder = new OperationHolder( ExpressionHelper.operationSet );
     }
 
     public static Expression createExpression(String str) throws ExpressionException {
@@ -106,8 +103,8 @@ public class ExpressionHelper {
         return null;
     }
 
-    private static Collection<Operation> getAllOperations() {
-        return operationSet;
+    private static Iterable<Operation> getAllOperations() {
+        return operationHolder;
     }
 
     private static String[] splitStringByOperation(String str, int pos, Operation operation) {

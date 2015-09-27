@@ -2,6 +2,7 @@ package com.epam.training.calculator;
 
 
 import com.epam.training.helper.ExpressionHelper;
+import com.epam.training.helper.OperationHolder;
 import com.epam.training.helper.expressions.ExpressionException;
 
 import javax.swing.*;
@@ -16,6 +17,7 @@ public class CalculatorWindow extends JFrame {
     private final JTextField expressonText;
     private final JLabel resultLabel;
     private final JLabel errorLabel;
+    private OperationHolder operationHolder;
 
     CalculatorWindow(){
         super("Calculator");
@@ -54,6 +56,8 @@ public class CalculatorWindow extends JFrame {
         this.setLocationRelativeTo(null);
 
         this.setVisible(true);
+
+        this.operationHolder = ExpressionHelper.operationHolder;
     }
 
     private ActionListener onClick = new ActionListener() {
@@ -79,5 +83,9 @@ public class CalculatorWindow extends JFrame {
         this.errorLabel.setVisible(false);
         this.resultLabel.setVisible(true);
         this.resultLabel.setText(String.format(" = %s", result) );
+    }
+
+    public OperationHolder getOperationHolder() {
+        return this.operationHolder;
     }
 }

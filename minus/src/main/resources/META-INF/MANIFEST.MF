@@ -1,0 +1,7 @@
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.epam.training.MinusOperation
+Bundle-Version: 1.0.0
+Bundle-Name: PlusOperation
+operationClass: com.epam.training.MinusOperation
+Export-Package: com.epam.training
+Import-Package: com.epam.training.helper.operations
